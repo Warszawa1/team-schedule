@@ -1,0 +1,16 @@
+
+body {
+    background-color: whitesmoke;
+    margin: 3em;
+}
+
+table {
+    margin-top: 50px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+}
