@@ -67,85 +67,85 @@ let findFreeGap = () => {
 
 
 // Trying to show the free gap in an interface
-// let result = findFreeGap();
+let result = findFreeGap();
 
-// if (result.length >= 1) {
-//     console.log("\nFree team gap at: " , WORK_HOURS[result[0]]);
-//     document.createElement("result");
-//     if (result == 0) {
-//         result = WORK_HOURS[0];
-//     } else if (result == 1) {
-//         result = WORK_HOURS[1];
-//     } else if (result == 2) {
-//         result = WORK_HOURS[2];
-//     } else if (result == 3) {
-//         result = WORK_HOURS[3];
-//     } else if (result == 4) {
-//         result = WORK_HOURS[4];
-//     } else if (result == 5) {
-//         result = WORK_HOURS[5];
-//     } else if (result == 6) {
-//         result = WORK_HOURS[6];
-//     } else if (result == 7) {
-//         result = WORK_HOURS[7];
-//     }
+if (result.length >= 1) {
+    console.log("\nFree team gap at: " , WORK_HOURS[result[0]]);
+    document.createElement("result");
+    if (result == 0) {
+        result = WORK_HOURS[0];
+    } else if (result == 1) {
+        result = WORK_HOURS[1];
+    } else if (result == 2) {
+        result = WORK_HOURS[2];
+    } else if (result == 3) {
+        result = WORK_HOURS[3];
+    } else if (result == 4) {
+        result = WORK_HOURS[4];
+    } else if (result == 5) {
+        result = WORK_HOURS[5];
+    } else if (result == 6) {
+        result = WORK_HOURS[6];
+    } else if (result == 7) {
+        result = WORK_HOURS[7];
+    }
 
 
-//     result.innerHTML = "Free team gap at: " + WORK_HOURS[result[0]].document;
-//     document.body.append("Free team gap at: ", result);
-// } else if (result.length === 0) {
-//     console.log("\nNo gap to organize a meeting");
-//     document.createElement("result");
-//     // result.innerHTML = "No gap to organize a meeting";
-//     document.body.append("No gap to organize a meeting");
+    result.innerHTML = "Free team gap at: " + WORK_HOURS[result[0]].document;
+    document.body.append("Free team gap at: ", result);
+} else if (result.length === 0) {
+    console.log("\nNo gap to organize a meeting");
+    document.createElement("result");
+    // result.innerHTML = "No gap to organize a meeting";
+    document.body.append("No gap to organize a meeting");
     
-// }       
+}       
 
 
 
-// //Mostrar el nombre de cada miembro y su disponibilidad en una tabla
-// function mostrar() {
-//     let table = document.createElement("table");
-//     let tr = document.createElement("tr");
-//     let th = document.createElement("th");
-//     th.innerHTML = "Name";
-//     tr.appendChild(th);
-//     th = document.createElement("th");
-//     th.innerHTML = "Availability";
-//     tr.appendChild(th);
-//     th = document.createElement("th");
-//     table.appendChild(tr);
-//     th.innerHTML = "Hours";
-//     tr.appendChild(th);
-//     table.appendChild(tr);
+//Mostrar el nombre de cada miembro y su disponibilidad en una tabla
+function mostrar() {
+    let table = document.createElement("table");
+    let tr = document.createElement("tr");
+    let th = document.createElement("th");
+    th.innerHTML = "Name";
+    tr.appendChild(th);
+    th = document.createElement("th");
+    th.innerHTML = "Availability";
+    tr.appendChild(th);
+    th = document.createElement("th");
+    table.appendChild(tr);
+    th.innerHTML = "Hours";
+    tr.appendChild(th);
+    table.appendChild(tr);
 
-//     for (let i = 0; i < myTeam.length; i++) {
-//         tr = document.createElement("tr");
-//         th = document.createElement("th");
-//         th.innerHTML = myTeam[i].name;
-//         tr.appendChild(th);
-//         th = document.createElement("th");
-//         th.innerHTML = myTeam[i].availability;
-//         tr.appendChild(th);
-//         th = document.createElement("td");
-//         th.innerHTML = WORK_HOURS;
-//         tr.appendChild(th);
-//         table.appendChild(tr);
+    for (let i = 0; i < myTeam.length; i++) {
+        tr = document.createElement("tr");
+        th = document.createElement("th");
+        th.innerHTML = myTeam[i].name;
+        tr.appendChild(th);
+        th = document.createElement("th");
+        th.innerHTML = myTeam[i].availability;
+        tr.appendChild(th);
+        th = document.createElement("td");
+        th.innerHTML = WORK_HOURS;
+        tr.appendChild(th);
+        table.appendChild(tr);
         
-//     }
-//     document.body.appendChild(table);
+    }
+    document.body.appendChild(table);
     
-// }
+}
 
-// function hide() {
-//     let table = document.getElementsByTagName("table");
-//     table[0].style.display = "none";
+function hide() {
+    let table = document.getElementsByTagName("table");
+    table[0].style.display = "none";
 
-//     let button = document.getElementById("btn-hide");
-//     button.addEventListener("click", function() {
-//         table[0].style.display = "block";
-//     }
-//     )
-// }
+    let button = document.getElementById("btn-hide");
+    button.addEventListener("click", function() {
+        table[0].style.display = "block";
+    }
+    )
+}
 
 
